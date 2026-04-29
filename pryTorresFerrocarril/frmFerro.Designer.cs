@@ -232,7 +232,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(8, 452);
+            this.btnLimpiar.Location = new System.Drawing.Point(8, 451);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(146, 34);
             this.btnLimpiar.TabIndex = 5;
@@ -244,7 +244,7 @@
             this.btnCalcular.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnCalcular.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(175, 452);
+            this.btnCalcular.Location = new System.Drawing.Point(175, 451);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(161, 34);
             this.btnCalcular.TabIndex = 6;
