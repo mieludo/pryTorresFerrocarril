@@ -16,7 +16,7 @@ namespace pryTorresFerrocarril
         {
             InitializeComponent();
 
-            // Registrar el manejador del botón Calcular
+            
             this.btnCalcular.Click += new EventHandler(this.btnCalcular_Click);
         }
 
@@ -35,10 +35,10 @@ namespace pryTorresFerrocarril
 
         }
 
-        // Maneja el click en "Calcular Precio" y muestra un MessageBox con los descuentos aplicables
+        
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            // Intentar leer valores enteros desde los MaskedTextBox
+            
             bool okDist = int.TryParse(mtbDistancia.Text.Trim(), out int distancia);
             bool okDias = int.TryParse(mtbDias.Text.Trim(), out int dias);
 
@@ -48,18 +48,18 @@ namespace pryTorresFerrocarril
                 return;
             }
 
-            // Condiciones según la información del grupo: descuento 50% si distancia >= 100 km y días >= 7
+            
             bool cumpleDistancia = distancia >= 100;
             bool cumpleDias = dias >= 7;
 
             if (cumpleDistancia && cumpleDias)
             {
-                string msg = $"Se aplica descuento del 50%.\n\nValores ingresados:\n- Distancia: {distancia} km\n- Días de estancia: {dias}\n\nCondiciones cumplidas:\n- Distancia >= 100 km\n- Días de estancia >= 7";
+                string msg = $"Se aplica descuento del 50%.\n\nValores ingresados:\n- Distancia: {distancia} km\n- Días de estancia: {dias}\n\nCondiciones cumplidas, gracias por comprar con Torres Ferrocarril.";
                 MessageBox.Show(msg, "Descuento aplicado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                // Informar qué condiciones se cumplen y cuáles faltan
+                
                 var cumplidas = new List<string>();
                 var faltantes = new List<string>();
 

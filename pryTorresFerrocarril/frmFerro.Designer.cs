@@ -43,13 +43,9 @@
             this.lblInformacion = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.gbCondicionDescuento = new System.Windows.Forms.GroupBox();
-            this.lblCondicionDescuento = new System.Windows.Forms.Label();
-            this.lblInformacionDescuento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTren)).BeginInit();
             this.gbDatos.SuspendLayout();
             this.gbInformacion.SuspendLayout();
-            this.gbCondicionDescuento.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbTren
@@ -150,6 +146,7 @@
             // 
             // gbInformacion
             // 
+            this.gbInformacion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbInformacion.Controls.Add(this.lblPrecio);
             this.gbInformacion.Controls.Add(this.lblInformacion);
             this.gbInformacion.Location = new System.Drawing.Point(79, 230);
@@ -171,7 +168,7 @@
             // 
             this.lblInformacion.AutoSize = true;
             this.lblInformacion.Font = new System.Drawing.Font("Sans Serif Collection", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformacion.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblInformacion.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblInformacion.Location = new System.Drawing.Point(9, 16);
             this.lblInformacion.Name = "lblInformacion";
             this.lblInformacion.Size = new System.Drawing.Size(134, 44);
@@ -181,7 +178,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(87, 390);
+            this.btnLimpiar.Location = new System.Drawing.Point(84, 401);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(146, 34);
             this.btnLimpiar.TabIndex = 5;
@@ -193,52 +190,18 @@
             this.btnCalcular.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnCalcular.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(254, 390);
+            this.btnCalcular.Location = new System.Drawing.Point(252, 401);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(161, 34);
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "🖩 Calcular Precio";
             this.btnCalcular.UseVisualStyleBackColor = false;
             // 
-            // gbCondicionDescuento
-            // 
-            this.gbCondicionDescuento.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gbCondicionDescuento.Controls.Add(this.lblInformacionDescuento);
-            this.gbCondicionDescuento.Controls.Add(this.lblCondicionDescuento);
-            this.gbCondicionDescuento.Location = new System.Drawing.Point(79, 440);
-            this.gbCondicionDescuento.Name = "gbCondicionDescuento";
-            this.gbCondicionDescuento.Size = new System.Drawing.Size(338, 131);
-            this.gbCondicionDescuento.TabIndex = 7;
-            this.gbCondicionDescuento.TabStop = false;
-            // 
-            // lblCondicionDescuento
-            // 
-            this.lblCondicionDescuento.AutoSize = true;
-            this.lblCondicionDescuento.Font = new System.Drawing.Font("Sans Serif Collection", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCondicionDescuento.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblCondicionDescuento.Location = new System.Drawing.Point(0, 16);
-            this.lblCondicionDescuento.Name = "lblCondicionDescuento";
-            this.lblCondicionDescuento.Size = new System.Drawing.Size(218, 44);
-            this.lblCondicionDescuento.TabIndex = 0;
-            this.lblCondicionDescuento.Text = "⛔ Condicion de descuento:";
-            this.lblCondicionDescuento.Click += new System.EventHandler(this.lblCondicionDescuento_Click);
-            // 
-            // lblInformacionDescuento
-            // 
-            this.lblInformacionDescuento.AutoSize = true;
-            this.lblInformacionDescuento.Location = new System.Drawing.Point(13, 54);
-            this.lblInformacionDescuento.Name = "lblInformacionDescuento";
-            this.lblInformacionDescuento.Size = new System.Drawing.Size(236, 39);
-            this.lblInformacionDescuento.TabIndex = 1;
-            this.lblInformacionDescuento.Text = " Para aplicar el descuento del 50% debe cumplir:\r\n▪︎ Distancia mayor o igual a 10" +
-    "0km.\r\n▪︎ Dias de estancia mayor o igual a 7 dias.\r\n";
-            // 
             // frmFerro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 602);
-            this.Controls.Add(this.gbCondicionDescuento);
+            this.ClientSize = new System.Drawing.Size(503, 456);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.gbInformacion);
@@ -257,8 +220,6 @@
             this.gbDatos.PerformLayout();
             this.gbInformacion.ResumeLayout(false);
             this.gbInformacion.PerformLayout();
-            this.gbCondicionDescuento.ResumeLayout(false);
-            this.gbCondicionDescuento.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,9 +241,6 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.GroupBox gbCondicionDescuento;
-        private System.Windows.Forms.Label lblCondicionDescuento;
-        private System.Windows.Forms.Label lblInformacionDescuento;
     }
 }
 
