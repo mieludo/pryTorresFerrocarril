@@ -43,6 +43,8 @@
             this.lblInformacion = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblDestino = new System.Windows.Forms.Label();
+            this.tbDestino = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTren)).BeginInit();
             this.gbDatos.SuspendLayout();
             this.gbInformacion.SuspendLayout();
@@ -85,6 +87,8 @@
             // 
             // gbDatos
             // 
+            this.gbDatos.Controls.Add(this.tbDestino);
+            this.gbDatos.Controls.Add(this.lblDestino);
             this.gbDatos.Controls.Add(this.mtbDias);
             this.gbDatos.Controls.Add(this.mtbDistancia);
             this.gbDatos.Controls.Add(this.lblDias);
@@ -92,32 +96,32 @@
             this.gbDatos.Controls.Add(this.lblDatos);
             this.gbDatos.Location = new System.Drawing.Point(78, 74);
             this.gbDatos.Name = "gbDatos";
-            this.gbDatos.Size = new System.Drawing.Size(339, 149);
+            this.gbDatos.Size = new System.Drawing.Size(339, 188);
             this.gbDatos.TabIndex = 3;
             this.gbDatos.TabStop = false;
             // 
             // mtbDias
             // 
-            this.mtbDias.Location = new System.Drawing.Point(161, 101);
+            this.mtbDias.Location = new System.Drawing.Point(161, 143);
             this.mtbDias.Mask = "99";
             this.mtbDias.Name = "mtbDias";
             this.mtbDias.Size = new System.Drawing.Size(91, 20);
-            this.mtbDias.TabIndex = 4;
+            this.mtbDias.TabIndex = 2;
             // 
             // mtbDistancia
             // 
-            this.mtbDistancia.Location = new System.Drawing.Point(161, 60);
+            this.mtbDistancia.Location = new System.Drawing.Point(161, 102);
             this.mtbDistancia.Mask = "99999";
             this.mtbDistancia.Name = "mtbDistancia";
             this.mtbDistancia.Size = new System.Drawing.Size(91, 20);
-            this.mtbDistancia.TabIndex = 3;
+            this.mtbDistancia.TabIndex = 1;
             this.mtbDistancia.ValidatingType = typeof(int);
             // 
             // lblDias
             // 
             this.lblDias.AutoSize = true;
             this.lblDias.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDias.Location = new System.Drawing.Point(14, 105);
+            this.lblDias.Location = new System.Drawing.Point(14, 147);
             this.lblDias.Name = "lblDias";
             this.lblDias.Size = new System.Drawing.Size(116, 16);
             this.lblDias.TabIndex = 2;
@@ -127,7 +131,7 @@
             // 
             this.lblDistancia.AutoSize = true;
             this.lblDistancia.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistancia.Location = new System.Drawing.Point(14, 64);
+            this.lblDistancia.Location = new System.Drawing.Point(14, 106);
             this.lblDistancia.Name = "lblDistancia";
             this.lblDistancia.Size = new System.Drawing.Size(101, 16);
             this.lblDistancia.TabIndex = 1;
@@ -149,7 +153,7 @@
             this.gbInformacion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbInformacion.Controls.Add(this.lblPrecio);
             this.gbInformacion.Controls.Add(this.lblInformacion);
-            this.gbInformacion.Location = new System.Drawing.Point(79, 230);
+            this.gbInformacion.Location = new System.Drawing.Point(79, 282);
             this.gbInformacion.Name = "gbInformacion";
             this.gbInformacion.Size = new System.Drawing.Size(338, 154);
             this.gbInformacion.TabIndex = 4;
@@ -169,7 +173,7 @@
             this.lblInformacion.AutoSize = true;
             this.lblInformacion.Font = new System.Drawing.Font("Sans Serif Collection", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInformacion.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblInformacion.Location = new System.Drawing.Point(9, 16);
+            this.lblInformacion.Location = new System.Drawing.Point(8, 16);
             this.lblInformacion.Name = "lblInformacion";
             this.lblInformacion.Size = new System.Drawing.Size(134, 44);
             this.lblInformacion.TabIndex = 0;
@@ -178,10 +182,10 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(84, 401);
+            this.btnLimpiar.Location = new System.Drawing.Point(84, 453);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(146, 34);
-            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "🔄 Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
@@ -190,18 +194,36 @@
             this.btnCalcular.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnCalcular.Font = new System.Drawing.Font("Sans Serif Collection", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(252, 401);
+            this.btnCalcular.Location = new System.Drawing.Point(252, 453);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(161, 34);
-            this.btnCalcular.TabIndex = 6;
+            this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "🖩 Calcular Precio";
             this.btnCalcular.UseVisualStyleBackColor = false;
+            // 
+            // lblDestino
+            // 
+            this.lblDestino.AutoSize = true;
+            this.lblDestino.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestino.Location = new System.Drawing.Point(14, 69);
+            this.lblDestino.Name = "lblDestino";
+            this.lblDestino.Size = new System.Drawing.Size(60, 16);
+            this.lblDestino.TabIndex = 5;
+            this.lblDestino.Text = "Destino:";
+            this.lblDestino.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tbDestino
+            // 
+            this.tbDestino.Location = new System.Drawing.Point(161, 64);
+            this.tbDestino.Name = "tbDestino";
+            this.tbDestino.Size = new System.Drawing.Size(91, 20);
+            this.tbDestino.TabIndex = 0;
             // 
             // frmFerro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 456);
+            this.ClientSize = new System.Drawing.Size(508, 536);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.gbInformacion);
@@ -213,7 +235,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmFerro";
-            this.Text = "Ferrocarril 🚆";
             this.Load += new System.EventHandler(this.frmFerro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTren)).EndInit();
             this.gbDatos.ResumeLayout(false);
@@ -241,6 +262,8 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lblDestino;
+        private System.Windows.Forms.TextBox tbDestino;
     }
 }
 
