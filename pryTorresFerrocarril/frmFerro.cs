@@ -112,8 +112,8 @@ namespace pryTorresFerrocarril
                 msg += "- Días de estancia: " + dias + nl;
                 msg += "- Destino: " + destino + nl + nl;
 
-                msg += "Precio base: " + precioBase.ToString("N2") + nl;
-                msg += "Precio final: " + precioFinal.ToString("N2") + nl + nl;
+                msg += "Precio base: " + precioBase.ToString("C2") + nl;
+                msg += "Precio final: " + precioFinal.ToString("C2") + nl + nl;
 
 
                 MessageBox.Show(msg, "Sin descuento", MessageBoxButtons.OK, MessageBoxIcon.Information);
